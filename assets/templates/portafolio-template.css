@@ -1,0 +1,102 @@
+
+/*====================================================*/
+@media screen and ( max-width: 800px ) {
+  .wrapper{
+    max-width: 780px;
+    max-height: 510px;
+  }
+  .wrapper > h1 {
+    margin-top: 10px;
+  }
+  
+  form{margin-left: 2em;margin-top:8em;}
+  .close{top: 1em; right: 1em;}
+  input{width:70%;}
+  textarea{width: 90%;}
+  
+  nav{display:none;}
+  
+  #social-portrait{margin-top: 4em;}
+  
+  #skills{
+    max-width: 500px;max-height: 500px;
+    margin-left:7em;margin-top: 5px;grid-gap: 15px 10px}
+  #skills div{
+    width: 550px;height: 70px;
+  }
+  #skills div h2{float:right;margin-top: 1em;margin-right: 2em;}
+  #programming-skills{
+    width: 90%;
+    height: 70%;
+    margin-left: 9em;
+    margin-top:1em;
+  }
+  #php-bton img,#json-bton img,#sass-bton img{
+    width: 65px; height: 65px;
+    margin-left: 2em; margin-top: 1em;}
+  #css-bton img, #js-bton img{ 
+    width: 70px; height: 70px;
+    margin-left: 6em;margin-top: 0.8em; }
+  #html-bton img{
+    width: 200px; height: 225px;
+    margin-left: 2em; margin-top: 6em;}
+    
+  footer{ max-width: 780px;}
+}
+@media screen and ( max-width: 360px ){
+  .wrapper{
+    max-width: 360px; max-height: 740px;
+  }
+  nav{display: block;top:18em; right: 5px;}
+  #sec1 h1{margin-top: 1em;}
+  #social-portrait{
+    margin-top: 9em; }
+    
+  form{margin-left: 1em;margin-top:5em;}
+  .close{top: 1em; right: 1em;}
+  input{width:70%;}
+  textarea{width: 90%;}
+  
+  #skills{
+    max-width: 320px;max-height: 700px;
+    margin-left:1.5em;margin-top: 3em;grid-gap: 30px 10px;
+  }
+  #c2 img{ max-width: 60px ; max-height: 55px;}
+  #c2 h2{ font-size: 12pt;}
+  #skills div{
+    width: 275px;
+  }
+  #skills img{margin-right: 5px;}
+  #skills div h2{float:right;margin-top: 1.5em;;margin-right: 1em;
+    font-size: 12pt;}
+  
+  #programming-skills{
+    margin-left: 5em;
+    display: grid;
+	  grid-template-columns: [col1] auto;
+    grid-template-rows: [row1] 16.66% [row2] 16.66% 
+  						[row3] 16.66% [row4] 16.66% [row5] 16.66% [row6] 16.66%; 
+    grid-template-areas: "html" "css"
+  						           "js" "php"
+  						           "json" "sass";
+    grid-gap: 15px 5px;
+  }
+  #html-bton{grid-area: html;}
+  #css-bton{grid-area: css;}
+  #js-bton{grid-area: js;}
+  #json-bton{grid-area: json;}
+  #php-bton{grid-area: php;}
+  #sass-bton{grid-area: sass;}
+  
+  #html-bton img, #css-bton img,
+  #js-bton img , #php-bton img , 
+  #json-bton img, #sass-bton img{width: 70px ; height: 70px;
+  margin-top: 5px;margin-left: 5em;}
+  
+  #programming-skills div:hover dialog{display:none;}
+  
+  #hire_me2{width:200px}
+  
+  footer{max-width: 360px;}
+}
+/* Change styles for span and cancel button on extra small screens */

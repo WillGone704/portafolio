@@ -1,0 +1,118 @@
+section{margin:0px;}
+#menuBurger{
+    color: #ffb300;
+    font-size: 24pt;
+
+    &:hover{
+        color: #ffdc89;
+        cursor: pointer;
+    }
+
+    &:active{
+        color: #db9f11;
+        cursor: pointer;
+    }
+}
+.hexagon {
+    background-color: #2b2b2b;
+    position: relative;
+    width: 180px; 
+    height: 115px;
+  
+    &:before,
+    &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    }
+  
+    &:before {
+    bottom: 100%;
+    border-bottom: 40px solid #2b2b2b
+    }
+  
+    &:after {
+    top: 100%;
+    left: 0px;
+    width: 0;
+    border-top: 40px solid #2b2b2b
+    }
+}
+#front-end--skills{
+    position: relative;
+    background: linear-gradient(#bf00ff,#ac00e6);
+    color: #ffb300;
+    padding: 2em;
+}
+.flexo-center{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexo-right{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#hex1{
+    margin-left: 20.6vmax;
+    margin-bottom: 3.2em;
+    margin-top: 8em;
+}
+
+#hex2{
+    margin-left: 27.5vmax;
+    margin-bottom: 3.2em;
+    margin-top: 8em;
+}
+.hex{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10em;
+
+}
+
+#back-end--skills{
+    position: relative;
+    background: linear-gradient(#39ff00,#33e600);
+    color: #ffb300;
+    padding: 2em;
+
+}
+#projects{
+    position: relative;
+    height: 500px;
+    background: linear-gradient(#bf00ff,#ac00e6);
+    color: #ffb300;
+    padding: 2em;
+}
+.projectContainer{
+    max-width: 50rem;
+    background-color: #2b2b2b;
+    padding: 2em;
+    box-shadow: 8px 8px #39ff00;
+
+    a{  
+        text-decoration: none;
+        padding:10px;
+        color: #2b2b2b;
+        background-color: #ffb300;
+        border-radius: 15px;
+
+        &:hover{
+            text-decoration: none;
+            color: #2b2b2b;
+            background-color: #ffdc89;
+        }
+
+        &:active{
+            text-decoration: none;
+            color: #2b2b2b;
+            background-color: #db9f11;
+        }
+    }
+}
