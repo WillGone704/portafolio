@@ -31,17 +31,6 @@ section{margin:0px;}
     position: relative;
     padding: 2em;
 }
-.flexo-center{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.flexo-right{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
 
 
 .hex{
@@ -63,15 +52,11 @@ section{margin:0px;}
 }
 .projectContainer{
     max-width: 50rem;
-    background-color: #2b2b2b;
     padding: 2em;
-    box-shadow: 8px 8px #39ff00;
 
     a{  
         text-decoration: none;
         padding:10px;
-        color: #2b2b2b;
-        background-color: #ffb300;
         border-radius: 15px;
 
      }

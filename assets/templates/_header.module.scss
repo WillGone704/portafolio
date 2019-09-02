@@ -5,8 +5,6 @@ header{
         max-width: 800px;
         margin: auto;
         padding: 10px;
-        box-shadow: 8px 8px #bf00ff;
-
         h1,h4{
             margin-top: 15px;
             margin-bottom: 15px;
@@ -14,17 +12,15 @@ header{
         h3{
             max-width: 500px;
             margin: auto;
-            color: #39ff00;
             padding: 5px;
-            border: 2px solid #39ff00;
             border-radius: 15px;
         }
-        p:not(#aboutInfo){
+        p{
             font-size: 12pt;
         }
-        #aboutInfo{
-            font-size: 16pt;
-        }
+    }
+    ul{
+        list-style: none;
     }
 
 }
