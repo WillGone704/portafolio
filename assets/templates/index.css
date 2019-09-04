@@ -1,6 +1,9 @@
 * {
   margin: 0px; }
 
+header, section {
+  height: 650px; }
+
 p, h1, h2, h3, h4, .hUnderline {
   color: #ffb300; }
 
@@ -41,29 +44,60 @@ i {
   background-color: #d4d4d4; }
 
 footer {
-  color: #ffb300; }
-  footer ul {
-    margin-top: 2em; }
+  color: #ffb300;
+  display: flex;
+  justify-content: space-between; }
+  footer div, footer figure {
+    display: flex; }
+  footer div, footer figure, footer p, footer a {
+    margin: 10px 10px; }
 
-header {
-  height: 500px;
-  text-align: center; }
-  header article {
-    max-width: 800px;
-    margin: auto;
-    padding: 10px; }
-    header article h1, header article h4 {
-      margin-top: 15px;
-      margin-bottom: 15px; }
-    header article h3 {
-      max-width: 500px;
-      margin: auto;
-      padding: 5px;
-      border-radius: 15px; }
-    header article p {
-      font-size: 12pt; }
-  header ul {
-    list-style: none; }
+header article {
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px; }
+  header article p {
+    margin-top: 20px;
+    font-size: 12pt; }
+
+#network {
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 2px solid #ffb300;
+  display: flex;
+  justify-content: center; }
+  #network a {
+    margin: 10px 10px; }
+
+#downButtonBox {
+  margin-top: 7em;
+  display: flex;
+  justify-content: center; }
+
+#downButton {
+  max-width: 20px;
+  border-radius: 20px;
+  list-style: none;
+  font-size: 11px;
+  border: 2px solid #ffb300; }
+  #downButton div {
+    content: " ";
+    width: 5px;
+    height: 5px;
+    margin: 5px 7px;
+    background-color: #ffb300;
+    border-radius: 50%; }
+
+.bigFont {
+  font-size: 40pt;
+  font-weight: bold; }
+
+.smallFont {
+  font-size: 14pt; }
+
+.mediumFont {
+  font-size: 30pt;
+  font-weight: bold; }
 
 nav {
   position: fixed;
@@ -117,9 +151,6 @@ nav {
     border-style: solid;
     border-color: transparent transparent transparent #2c2b2b; }
 
-section {
-  margin: 0px; }
-
 .hexagon {
   background-color: #2b2b2b;
   position: relative;
@@ -155,7 +186,6 @@ section {
 
 #projects {
   position: relative;
-  height: 500px;
   padding: 2em; }
 
 .projectContainer {
