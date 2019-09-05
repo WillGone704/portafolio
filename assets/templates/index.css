@@ -211,10 +211,8 @@ nav {
   .hexagonBlack:before, .hexagonLight:before {
     bottom: 100%; }
 
-#front-end--skills {
+#front-end--skills, #back-end--skills, #projects, #contact {
   padding: 2em; }
-  #front-end--skills span {
-    margin: 10px auto; }
 
 .hexBox {
   max-width: 1100px;
@@ -225,12 +223,6 @@ nav {
 
 .hex {
   margin: 5em 5px; }
-
-#back-end--skills {
-  padding: 2em; }
-
-#projects {
-  padding: 2em; }
 
 #projectsBox {
   margin-top: 50px;
@@ -243,5 +235,41 @@ nav {
   border-radius: 5px; }
   .projectContainer p {
     margin: 15px 5px 40px; }
+  .projectContainer h2 {
+    color: #ffd268; }
+
+form {
+  max-width: 700px;
+  height: 500px;
+  padding: 10px;
+  background-color: #ffd268;
+  color: #2b2b2b;
+  margin: 3em auto 10px;
+  border-radius: 5px; }
+  form input {
+    background-color: transparent;
+    color: #2b2b2b;
+    border: none;
+    border-bottom: 2px solid #2b2b2b;
+    width: 400px;
+    margin: 5px auto 10px; }
+  form label {
+    margin-left: 10px; }
+  form button {
+    background-color: #bf00ff;
+    color: #2b2b2b;
+    margin-left: 5em;
+    margin-top: 10px;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 15px; }
+    form button:hover {
+      cursor: pointer;
+      background-color: #d455ff; }
+    form button:active {
+      cursor: pointer;
+      background-color: #a700df; }
+  form textarea {
+    margin: 10px 0px 10px 60px; }
 
 /*# sourceMappingURL=index.css.map */
