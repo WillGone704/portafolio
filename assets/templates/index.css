@@ -4,28 +4,39 @@
 header, section {
   height: 650px; }
 
-p, h1, h2, h3, h4, .hUnderline {
-  color: #ffb300; }
+p {
+  color: #ffb300;
+  font-size: 12pt; }
 
 i {
   color: #bf00ff; }
 
-.projectContainer, footer, header {
+.projectContainer, footer, header, #back-end--skills, #contact {
   background-color: #2c2b2b; }
 
-.hUnderline {
-  max-width: 500px;
-  height: 10px; }
+.hUnderlineLight, .hUnderlineBlack {
+  max-width: 900px;
+  height: 4px;
+  margin: 10px auto;
+  border-radius: 5px; }
+
+.hUnderlineBlack {
+  background-color: #2c2b2b; }
+
+.hUnderlineLight {
+  background-color: #ffd268; }
 
 .anchorButton {
-  background-color: #ffb300;
+  background-color: #bf00ff;
   color: #2c2b2b;
-  padding: 10px;
-  border-radius: 15px; }
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 20px;
+  text-decoration: none; }
   .anchorButton:hover {
-    background-color: #ffd268; }
+    background-color: #d455ff; }
   .anchorButton:active {
-    background-color: #e7a200; }
+    background-color: #a700df; }
 
 .icon--large {
   width: 110px;
@@ -41,7 +52,7 @@ i {
   height: 45px; }
 
 #front-end--skills, #projects {
-  background-color: #d4d4d4; }
+  background-color: #ffb300; }
 
 footer {
   color: #ffb300;
@@ -57,8 +68,7 @@ header article {
   margin: auto;
   padding: 10px; }
   header article p {
-    margin-top: 20px;
-    font-size: 12pt; }
+    margin-top: 20px; }
 
 #network {
   margin-top: 50px;
@@ -90,14 +100,16 @@ header article {
 
 .bigFont {
   font-size: 40pt;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #bf00ff; }
 
 .smallFont {
   font-size: 14pt; }
 
 .mediumFont {
   font-size: 30pt;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #ffd268; }
 
 nav {
   position: fixed;
@@ -151,49 +163,85 @@ nav {
     border-style: solid;
     border-color: transparent transparent transparent #2c2b2b; }
 
-.hexagon {
-  background-color: #2b2b2b;
+.sectionHeaderBlack, .sectionHeaderLight {
+  color: #bf00ff;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px 20em;
+  text-align: center; }
+
+.sectionHeaderBlack {
+  background-color: #2b2b2b; }
+  .sectionHeaderBlack span {
+    color: #ffd268; }
+
+.sectionHeaderLight {
+  background-color: #ffd268; }
+  .sectionHeaderLight span {
+    color: #2b2b2b; }
+
+.hexagonBlack {
+  background-color: #2b2b2b; }
+  .hexagonBlack:before {
+    border-bottom: 40px solid #2b2b2b; }
+  .hexagonBlack:after {
+    border-top: 40px solid #2b2b2b; }
+
+.hexagonLight {
+  background-color: #ffb300; }
+  .hexagonLight:before {
+    border-bottom: 40px solid #ffb300; }
+  .hexagonLight:after {
+    border-top: 40px solid #ffb300; }
+
+.hexagonBlack, .hexagonLight {
   position: relative;
   width: 180px;
   height: 115px; }
-  .hexagon:before, .hexagon:after {
+  .hexagonBlack:before, .hexagonBlack:after, .hexagonLight:before, .hexagonLight:after {
     content: "";
     position: absolute;
     width: 0;
     border-left: 90px solid transparent;
     border-right: 90px solid transparent; }
-  .hexagon:before {
-    bottom: 100%;
-    border-bottom: 40px solid #2b2b2b; }
-  .hexagon:after {
+  .hexagonBlack:after, .hexagonLight:after {
     top: 100%;
     left: 0px;
-    width: 0;
-    border-top: 40px solid #2b2b2b; }
+    width: 0; }
+  .hexagonBlack:before, .hexagonLight:before {
+    bottom: 100%; }
 
 #front-end--skills {
-  position: relative;
   padding: 2em; }
+  #front-end--skills span {
+    margin: 10px auto; }
+
+.hexBox {
+  max-width: 1100px;
+  margin: 8em auto 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .hex {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 10em; }
+  margin: 5em 5px; }
 
 #back-end--skills {
-  position: relative;
   padding: 2em; }
 
 #projects {
-  position: relative;
   padding: 2em; }
 
+#projectsBox {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
+
 .projectContainer {
-  max-width: 50rem;
-  padding: 2em; }
-  .projectContainer a {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 15px; }
+  width: 500px;
+  padding: 2em;
+  border-radius: 5px; }
+  .projectContainer p {
+    margin: 15px 5px 40px; }
 
 /*# sourceMappingURL=index.css.map */
