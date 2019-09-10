@@ -1,2 +1,3 @@
 *.scss
 /assets/templates/.sass-cache
+.sass-cache
