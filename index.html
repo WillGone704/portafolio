@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" type="text/css" href="./assets/templates/index.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    </head>
 
    <body>
@@ -39,7 +40,7 @@
       <header>
          <article>
             <p>
-               <span class="bigFont">Hi,</span><br/>
+               <span id = "hi" class="bigFont">Hi,</span><br/>
                <span class="smallFont">my name is </span>
                <span class="mediumFont">Wilberto Gonzalez</span>.<br/>
                <span class="smallFont">And I'm a...</span><br/>
@@ -66,9 +67,9 @@
 
             <div id="downButtonBox">
                <div id="downButton">
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  <div id = "point1"></div>
+                  <div id = "point2"></div>
+                  <div id = "point3"></div>
                </div>
             </div>
          </article>
@@ -79,43 +80,50 @@
 		   <h1 class="sectionHeaderBlack"><span>Front-end</span> Skills</h1>
                
    	   <div class="hexBox">
-            <figure class="hexagonBlack hex">
+            <figure class="hexagonBlack hex" data-aos = "zoom-in" data-aos-duration = "2000">
                <img src="./assets/images/html-icon.png" class="icon--large"/>
             </figure>
 
-            <figure class="hexagonBlack hex ">
+            <figure class="hexagonBlack hex" data-aos = "zoom-in" data-aos-duration = "2000"
+               data-aos-delay = "300">
 		         <img src="./assets/images/css3-icon.png" class="icon--large"/>
    	      </figure>
 
-            <figure class="hexagonBlack hex ">
+            <figure class="hexagonBlack hex" data-aos = "zoom-in" data-aos-duration = "2000"
+               data-aos-delay = "600">
                <img src="./assets/images/javascripts-icon.png" class="icon--large"/>
      	      </figure>
 
-            <figure class="hexagonBlack hex ">
+            <figure class="hexagonBlack hex" data-aos = "zoom-in" data-aos-duration = "2000"
+               data-aos-delay = "900">
                <img src="./assets/images/reactjs-icon.png" class="icon--large"/>
             </figure>
          </div>
-         <div class="hUnderlineBlack"></div>
+         <div class="hUnderlineBlack" data-aos="zoom-in-up" data-aos-duration="2000"
+            data-aos-delay="1100"></div>
       </section>
 
       <section id="back-end--skills">
            
-         <h1 class="sectionHeaderLight"><span>Back-end</span> Skills</h1>
+         <h1 class="sectionHeaderLight" ><span>Back-end</span> Skills</h1>
 
 		   <div class="hexBox">
-		      <figure class="hexagonLight hex">
+            <figure class="hexagonLight hex" data-aos = "zoom-in" data-aos-duration = "2000">
               <img src="./assets/images/nodejs-icon.png" class="icon--large"/>
             </figure>
   
-            <figure class="hexagonLight hex">
+            <figure class="hexagonLight hex" data-aos = "zoom-in" data-aos-duration = "2000"
+               data-aos-delay = "300">
               <img src="./assets/images/mongodb-icon.png" class="icon--large"/>
             </figure>
                             
-		      <figure class="hexagonLight hex">
+            <figure class="hexagonLight hex" data-aos = "zoom-in" data-aos-duration = "2000"
+               data-aos-delay = "600">
               <img src = "./assets/images/express-icon2.png" id="expressIcon"/>
             </figure>
          </div>
-         <div class="hUnderlineLight"></div>
+         <div class="hUnderlineLight" data-aos="zoom-in-up" data-aos-duration="2000"
+            data-aos-delay="800"></div>
       </section>
 
       <section id="projects">
@@ -124,7 +132,8 @@
 
          <div id="projectsBox">
 
-            <article class="projectContainer">
+            <article class="projectContainer" data-aos="zoom-in" data-aos-duration="2000"
+               data-aos-delay="400">
                <h2>NodeBox</h2>
                <img alt="project-thumbnail"/>
                
@@ -143,10 +152,10 @@
 	   <section id = "contact">
 
 		   <h1 class="sectionHeaderLight"><span>Contact</span> Me</h1>
-         <div id = "warnlabel">
+         <div id = "warnlabel" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1600">
             <p>My Apologize, the contact form doesn't work yet</p>
          </div>
-		   <form method = "post">
+		   <form method = "post" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
 
 			   <label style = "margin-right: 20px">Name :</label>
 			   <input type ="text" name = "name" placeholder = "John Doe" required /><br/>
@@ -188,7 +197,9 @@
                 
          <p>Powered by <a href = "https://pages.github.com/" target="_blank">Github Pages</a></p>
       </footer>
-      <!-- Loading failed for the <script> with source “file:///scripts/portafolio.js”. -->
+
       <script src="scripts/main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init()</script>
     </body>
 </html>

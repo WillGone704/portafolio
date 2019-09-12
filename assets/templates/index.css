@@ -18,8 +18,9 @@ i {
 .hUnderlineLight, .hUnderlineBlack {
   max-width: 900px;
   height: 4px;
-  margin: 10px auto;
-  border-radius: 5px; }
+  margin: 30px auto;
+  border-radius: 5px;
+  animation: underlineAnimation 2s; }
 
 .hUnderlineBlack {
   background-color: #2c2b2b; }
@@ -133,6 +134,9 @@ header article {
 header p {
   margin-top: 20px; }
 
+#hi {
+  animation: shakeIt 5s infinite; }
+
 #network {
   margin-top: 50px;
   padding: 20px;
@@ -152,14 +156,25 @@ header p {
   border-radius: 20px;
   list-style: none;
   font-size: 11px;
-  border: 2px solid #ffb300; }
-  #downButton div {
-    content: " ";
-    width: 5px;
-    height: 5px;
-    margin: 5px 7px;
-    background-color: #ffb300;
-    border-radius: 50%; }
+  border: 2px solid #ffb300;
+  animation: buttonPulse 1.8s infinite 2.7s; }
+
+#point1, #point2, #point3 {
+  content: " ";
+  width: 5px;
+  height: 5px;
+  margin: 5px 7px;
+  background-color: #ffb300;
+  border-radius: 50%; }
+
+#point1 {
+  animation: pointPulse 1.8s infinite 2.7s; }
+
+#point2 {
+  animation: pointPulse 1.8s infinite 3.7s; }
+
+#point3 {
+  animation: pointPulse 1.8s infinite 4.2s; }
 
 .bigFont {
   font-size: 40pt;
@@ -257,7 +272,6 @@ header p {
     color: #ffd268; }
 
 #warnlabel {
-  display: none;
   position: relative;
   top: 10em;
   background-color: #707070;
@@ -378,5 +392,25 @@ form {
     width: 275px; }
   form textarea {
     margin: 10px 0px 10px 10px; } }
+/* -----------------The Animations Section------------*/
+@keyframes shakeIt {
+  0% {
+    transform: rotate(10deg); }
+  25% {
+    transform: rotate(-10deg); }
+  50% {
+    transform: rotate(10deg); }
+  100% {
+    transform: rotate(-10deg); } }
+@keyframes pointPulse {
+  from {
+    background-color: #fae4b1; }
+  to {
+    background-color: #ffb300; } }
+@keyframes buttonPulse {
+  from {
+    border: 2px solid #fae4b1; }
+  to {
+    border: 2px solid #ffb300; } }
 
 /*# sourceMappingURL=index.css.map */
