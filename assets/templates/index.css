@@ -62,6 +62,7 @@ i {
 footer {
   color: #ffb300;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 80px 10px 10px 10px; }
   footer div, footer figure {
@@ -134,8 +135,32 @@ header article {
 header p {
   margin-top: 20px; }
 
-#hi {
-  animation: shakeIt 5s infinite; }
+#myEmail {
+  cursor: pointer; }
+  #myEmail:hover {
+    color: #ffd268; }
+  #myEmail:active {
+    color: #e7a200; }
+
+#myEmailDialog {
+  visibility: hidden;
+  position: relative;
+  top: 10px;
+  left: 24em;
+  color: #ffd268;
+  background-color: #707070;
+  width: 125px;
+  padding: 2px;
+  border-radius: 2px; }
+  #myEmailDialog:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50px;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 5px solid #707070; }
 
 #network {
   margin-top: 50px;
@@ -242,7 +267,6 @@ header p {
   padding: 2em; }
 
 .hexBox {
-  width: 1100px;
   margin: 8em auto 10px;
   display: flex;
   flex-wrap: wrap;
@@ -338,7 +362,7 @@ form {
     margin-top: 30px; }
 
   #downButtonBox {
-    margin-top: 7em; }
+    margin-top: 5em; }
 
   .bigFont {
     font-size: 30pt; }
@@ -365,9 +389,6 @@ form {
   .hUnderlineBlack, .hUnderlineLight {
     margin: 4em auto; }
 
-  .hexBox {
-    margin: 2em auto 10px; }
-
   .hex {
     margin: 4em 5px; }
 
@@ -391,7 +412,11 @@ form {
   form input {
     width: 275px; }
   form textarea {
-    margin: 10px 0px 10px 10px; } }
+    margin: 10px 0px 10px 10px;
+    box-sizing: border-box;
+    width: 260px; }
+  form button {
+    margin-left: 3.5em; } }
 /* -----------------The Animations Section------------*/
 @keyframes shakeIt {
   0% {
