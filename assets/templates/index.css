@@ -360,6 +360,10 @@ form {
 
   article p {
     margin-top: 30px; }
+    article p span {
+      display: block; }
+      article p span:before {
+        content: attr(data-text); }
 
   #downButtonBox {
     margin-top: 5em; }
